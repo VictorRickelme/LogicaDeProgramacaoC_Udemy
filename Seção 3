@@ -1,0 +1,34 @@
+<tipo da váriavel> <nome da váriavel> = <valor da váriavel;> 
+
+exemplo:
+
+int idade = 25; ( int= só pode carregar número inteiro)
+
+double altura = 1.68; ( double= só pode carregar número com casas decimais)
+
+char sexo = F; ( char= só pode carregar um caracter onde o mesmo pode ser uma letra, um número ou um digito) 
+
+Sendo assim uma váriavel possui 
+
+- Tipo 
+- Nome/Identificador
+- Valor 
+- Endereço ( Onde a váriavel está na memória RAM ) 
+
+Outras váriaveis em C#
+
+byte = 0 - 255 ( números positivos )
+sbyte = -128 - 127 ( números positivos e negativos ) 
+short = -32.768 - 32.767 ( números positivos e negativos )
+ushort = 0 - 65.535 ( números positivos )
+int = -2milhoes - 2milhoes ( números positivos e negativos )        ** QUANTO MENOR ESPAÇO NA RAM ( ter menos números ), MAIOR SERÁ A PERFORMANCE DO PROJETO **
+uint = 0 - 4milhoes ( números positivos )
+long = -trilhoes - trilhoes ( números positivos e negativos )
+ulong = 0 - trilhoes trilhoes ( números positivos )
+float = ( números com pontos flutuantes/número com casas decimais )
+double = ( números com pontos flutuantes/número com casas decimais só que com mais possibilidades e támbem tem a precisão maior )
+decimal = mais usado em sistemas de informação 
+char = armazena um caracter 
+string = palavras e textos 
+bool = verdadeiro ou falso ( true or false )
+object = um objeto generico 
