@@ -32,3 +32,102 @@ char = armazena um caracter
 string = palavras e textos 
 bool = verdadeiro ou falso ( true or false )
 object = um objeto generico 
+
+---------------------------------------------------------------------------------------------
+
+Sem quebra de linha ao final:
+                                             Ex: Console.Write("Bom dia!");
+Console.Write("Bom dia!");                       Console.Write("Olá mundo!"); 
+                                                    Bom dia!Olá mundo!
+Com quebra de linha ao final:
+
+Console.WriteLine("Bom dia!");               Ex: Console.WriteLine("Bom dia!");
+                                                 Console.WriteLine("Olá mundo!");
+                                                      Bom dia!
+                                                      Olá mundo!
+
+Para escrever o conteúdo de uma variável com ponto flutuante
+                                                
+Suponha uma variável tipo *double* declarada e iniciada:
+
+double x = 10.35784;
+
+Console.WriteLine(x);    * o x seria a várivel ou seja apenas colocar em parentesses
+
+Console.WriteLine(x.ToString("F2"));       * para deixar 2 numeros depois da virgula/ponto
+Console.WriteLine(x.ToString("F4"));       * para deixar 4 numeros depois da virgula/ponto
+
+Console.WriteLine(x.ToString("F2", CultureInfo.InvariantCulture));       * para deixar o modo de leitura com o ponto invés da virgula
+                                 informação: using System.Globalization;  * para usar o comando a cima precisa usar esse repositório.
+
+----------------------------------------------------------------------------------------------
+
+Para concatenar vários elementos em um mesmo comando de escrita
+
+Regra geral:
+elemento1 + elemento2 + elemento3 + ... + elementoN
+Console.WriteLine("RESULTADO = " + x);
+Console.WriteLine("O valor do troco é " + x + " reais");
+Console.WriteLine("O valor do troco é " + x.ToString("F2") + " reais");
+
+----------------------------------------------------------------------------------------------
+
+Processamento de dados
+
+Comando de atribuição.
+
+Sintaxe:
+<variável> = <expressão>
+ 
+Ex 1
+
+int x, y;
+
+x = 5;
+y = 2 * x;
+
+Console.WriteLine(x);    * Resultado 5;
+Console.WriteLine(y);    * Resultado 10;
+
+Console.ReadLine();
+
+Ex 2
+
+double b, B, h, area;
+
+b = 6.0;
+B = 8.0;
+h = 5.0;
+
+area = (b + B) / 2.0 * h;
+
+Console.WriteLine(area);     * Resultado 35
+
+Console.ReadLine();
+
+Ex 3 (Casting)
+
+int a, b;
+double resultado;
+
+a = 5;
+b = 2;
+
+resultado = (double) a / b;             * Colocar (double) na frente por que o resultado é numero quadrado
+
+Console.WriteLine (resultado);
+Console.ReadLine();
+
+Ex 4 (Casting) 
+
+double a;
+int b;
+
+a = 5.0;
+b = (int) a;                        * Colocar (int) na frente por que o resultado é numero com ponto na frente
+Console.WriteLine(b);
+
+Console.ReadLine();
+
+
+
