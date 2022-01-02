@@ -105,6 +105,10 @@ Console.WriteLine(area);     * Resultado 35
 
 Console.ReadLine();
 
+-----------------------------------------------------------------------------
+
+
+
 Ex 3 (Casting)
 
 int a, b;
@@ -128,6 +132,71 @@ b = (int) a;                        * Colocar (int) na frente por que o resultad
 Console.WriteLine(b);
 
 Console.ReadLine();
+
+-------------------------------------------------------------------------------------------------------------
+
+string frase = Console.ReadLine();
+string x = Console.ReadLine();
+string y = Console.ReadLine();                            * Console.Readline(); armazena na memória tudo que o usuário escreve até o enter
+string z = Console.ReadLine();            
+string[] v = Console.ReadLine().Split(' ');               * O ' ' com o espaço vazio é para o espaço entre as palavras 
+string a = v[0];
+string b = v[1];
+string c = v[2];
+Console.WriteLine("Você digitou: ");
+Console.WriteLine(frase);
+Console.WriteLine(x);
+Console.WriteLine(y);
+Console.WriteLine(z);
+Console.WriteLine(a);
+Console.WriteLine(b);
+Console.WriteLine(c);
+
+-------------------------------------------------------
+
+
+int n1 = int.Parse(Console.ReadLine());
+char ch = char.Parse(Console.ReadLine());
+double n2 = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+string[] vet = Console.ReadLine().Split(' ');
+string nome = vet[0];                                           ** PARA COLOCAR TUDO NA MESMA LINHA E DEPOIS O RESULTADO SAIR NA TELA
+char sexo = char.Parse(vet[1]);
+int idade = int.Parse(vet[2]);                                  ** <variavel>.Parse caso a variavel for diferente de string.
+double altura = double.Parse(vet[3], CultureInfo.InvariantCulture);
+Console.WriteLine("Você digitou:");
+Console.WriteLine(n1);
+Console.WriteLine(ch);
+Console.WriteLine(n2.ToString("F2", CultureInfo.InvariantCulture));
+Console.WriteLine(nome);
+Console.WriteLine(sexo);
+Console.WriteLine(idade);
+Console.WriteLine(altura.ToString("F2", CultureInfo.InvariantCulture));
+
+***** Console.ReadLine();
+
+Lê o que o usuário digita até a quebra de linha
+
+-------------------------------------------------------------------------------------
+
+EXERCICIO DE FIXAÇÃO DE SAIDA DE DADOS ( CORRETO ) 
+
+Console.WriteLine("Entre com seu nome completo:");
+string nome = (Console.ReadLine());
+Console.WriteLine("Quantos quartas tem na sua casa?");
+int quartos = int.Parse(Console.ReadLine());
+Console.WriteLine("Entre com o preço de um produto:");
+double produto = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+Console.WriteLine("Entre seu ultimo nome, idade e altura (mesma linha):");
+string[] vet = Console.ReadLine().Split(' ');
+string nome1 = vet[0];
+int idade1 = int.Parse(vet[1]);
+double altura1 = double.Parse(vet[2], CultureInfo.InvariantCulture);
+Console.WriteLine(nome);
+Console.WriteLine(quartos);
+Console.WriteLine(produto.ToString("F2", CultureInfo.InvariantCulture));
+Console.WriteLine(nome1);
+Console.WriteLine(idade1);
+Console.WriteLine(altura1.ToString("F2", CultureInfo.InvariantCulture)); 
 
 
 
