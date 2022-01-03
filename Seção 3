@@ -198,5 +198,8 @@ Console.WriteLine(nome1);
 Console.WriteLine(idade1);
 Console.WriteLine(altura1.ToString("F2", CultureInfo.InvariantCulture)); 
 
+----------------------------------------------------------------------------------------------------
+
+
 
 
