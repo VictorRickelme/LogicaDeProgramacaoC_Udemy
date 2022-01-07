@@ -200,6 +200,130 @@ Console.WriteLine(altura1.ToString("F2", CultureInfo.InvariantCulture));
 
 ----------------------------------------------------------------------------------------------------
 
+1001 RESPOSTA ( URI ONLINE ) 
+
+int A, B, X;
+
+A = int.Parse(Console.ReadLine());
+B = int.Parse(Console.ReadLine());
+
+X = A + B;
+
+Console.WriteLine(" X = " + X);
+
+Console.ReadLine();
+
+----------------------------------------------
+
+1003 RESPOSTA ( URI ONLINE ) 
+
+using System;
+
+namespace uri1003 {
+    class Program {
+        static void Main(string[] args) {
+
+            int A, B, soma;
+
+            A = int.Parse(Console.ReadLine());
+            B = int.Parse(Console.ReadLine());
+
+            soma = A + B;
+
+            Console.WriteLine("SOMA = " + soma);
+        }
+    }
+
+_________________________________________________
+
+1004 RESPOSTA ( URI ONLINE ) 
+
+using System;
+
+namespace uri1004 {
+    class Program {
+        static void Main(string[] args) {
+
+            int x, y, prod;
+
+            x = int.Parse(Console.ReadLine());
+            y = int.Parse(Console.ReadLine());
+            prod = x * y;
+            Console.WriteLine("PROD = " + prod);
+        }
+    }
+}
+
+---------------------------------------------------------------
+
+1005 RESPOSTA ( URI ONLINE ) 
+
+using System;
+using System.Globalization;
+
+namespace uri1005 {
+    class Program {
+        static void Main(string[] args) {
+
+            double A, B, media;
+
+            A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            media = ((A * 3.5) + (B * 7.5)) / 11;
+
+            Console.WriteLine("MEDIA = " + media.ToString("F5", CultureInfo.InvariantCulture));
+        }
+    }
+}
+
+-------------------------------------------------------------------
+1006 RESPOSTA ( URI ONLINE )
+
+using System;
+using System.Globalization;
+
+namespace uri1006 {
+    class Program {
+        static void Main(string[] args) {
+
+            double A, B, C, media;
+
+            A = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            B = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+            C = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            media = (A * 2.0 + B * 3.0 + C * 5) / 10.0;
+
+            Console.WriteLine("MEDIA = " + media.ToString("F1", CultureInfo.InvariantCulture));
+        }
+    }
+}
+
+--------------------------------------------------------------------------
+
+1007 RESPOSTA ( URI ONLINE )
+
+using System;
+namespace Curso
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            double a, b, c, d, diferenca;
+
+            a = double.Parse(Console.ReadLine());
+            b = double.Parse(Console.ReadLine());
+            c = double.Parse(Console.ReadLine());
+            d = double.Parse(Console.ReadLine());
+
+            diferenca = (a * b) - (c * d);
+
+            Console.WriteLine("DIFERENCA = " + diferenca);
+        }
+    }
+}
 
 
 
