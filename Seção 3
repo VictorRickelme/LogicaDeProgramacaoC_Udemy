@@ -481,3 +481,59 @@ namespace uri1017 {
 
 ------------------------------------------------------------------------------
 
+EXERCICIO RESOLVIDO 02 
+
+using System;
+using System.Globalization;
+
+namespace uri1014
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+
+
+            double base1, altura, perimetro, diagonal, area;
+
+            base1 = double.Parse(Console.ReadLine());
+            altura = double.Parse(Console.ReadLine());
+
+            area = base1* altura;
+            perimetro = base1 + base1 + altura + altura;
+            diagonal = Math.Sqrt(Math.Pow(base1, 2.0) + Math.Pow(altura, 2.0));                   ( Math.Sqrt(valor que quer fazer a conta) = Raiz Quadrada
+                                                                                                  ( Math.Pow(valor que quer fazer a conta) = Potência.
+            Console.WriteLine(" AREA = " + area.ToString("F4"));
+            Console.WriteLine("PERIMETRO = " + perimetro.ToString("F4"));
+            Console.WriteLine("DIAGONAL = " + diagonal.ToString("F4"));
+        }
+    }
+}
+
+--------------------------------------------------------------------------------------
+
+EXERCICIO RESOLVIDO 03
+
+O QUE EU CRIEI ATÉ AGORA 
+
+double idade1, idade2, media;
+string nome, nome1;
+
+media = idade1 + idade2 / 2;
+
+string[] vetorMedia;
+vetorMedia = Console.ReadLine().Split(' ');
+nome = vetorMedia[0];
+idade1 = double.Parse(vetorMedia[1];
+
+vetorMedia = Console.ReadLine().Split(' ');
+nome1 = vetorMedia[0];
+idade2 = int.ParsevetorMedia[1];
+
+Console.WriteLine("A idade média de " + nome + " e " + nome1 + "é de " + media.ToString("F1) + " anos ")); 
+
+
+nome = Console.ReadLine();
+idade1 = double.Parse(Console.ReadLine));
+idade2 = double.Parse(Console.ReadLine));
+
